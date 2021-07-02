@@ -146,6 +146,10 @@
   padding-left: 3rem;
 }
 
+.product-list__item {
+  padding-bottom: 4rem;
+}
+
 .product-list__item .image-container img {
   width: 100%;
   height: auto;
