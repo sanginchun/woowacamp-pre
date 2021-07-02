@@ -55,7 +55,7 @@
   margin-right: 25px;
 }
 
-.main-content__content .filter-controller .filter-button span {
+.main-content__content .filter-controller .filter-button > span {
   margin-right: 8px;
 }
 
@@ -174,4 +174,33 @@
 
 .product-list__item__info .product-price {
   margin-top: 0.5rem;
+}
+
+@media (max-width: 1100px) {
+  .main-content__container {
+    padding: 0 1.2rem;
+  }
+  .main-content__content .filter-controller .filter-button {
+    margin: 0;
+    padding: 6px 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+
+  .main-content__content .filter-controller .filter-button span.text-hide {
+    display: none;
+  }
+
+  .main-content__content .filter-controller .sort-button {
+    display: none;
+  }
+
+  .main-content__content__body .content-filter {
+    display: none;
+  }
+
+  .main-content__content__body .product-list {
+    padding-left: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
