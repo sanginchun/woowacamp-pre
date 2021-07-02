@@ -201,6 +201,5 @@
 
   .main-content__content__body .product-list {
     padding-left: 0;
-    grid-template-columns: repeat(2, 1fr);
   }
 }
