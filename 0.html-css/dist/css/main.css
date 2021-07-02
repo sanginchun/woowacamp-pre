@@ -72,12 +72,11 @@
 
 .main-content__content__body .content-filter {
   font-weight: 500;
-  width: 250px;
+  min-width: 220px;
   height: calc(100vh - 255px);
   position: sticky;
   top: 52px;
   padding-left: 4px;
-  padding-right: 1rem;
 
   overflow-y: scroll;
 }
