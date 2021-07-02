@@ -138,9 +138,11 @@
   display: flex;
   align-items: center;
   padding: 5px;
-  margin-right: 12px;
+  margin: 0 6px;
   border: 1px solid transparent;
   cursor: pointer;
+
+  height: 36px;
 }
 
 .main-header__main__right .button-group li:hover {
@@ -149,5 +151,27 @@
 }
 
 .main-header__main__right .button-group li:last-child {
-  margin: 0;
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .main-header__upper {
+    display: none;
+  }
+
+  .main-header__main {
+    padding: 0 1rem;
+  }
+
+  .main-header__main__categories {
+    display: none;
+  }
+
+  .main-header__main__right .search-field {
+    display: none;
+  }
+
+  .main-header__main__right .button-group li:last-child {
+    display: inline-block;
+  }
 }
