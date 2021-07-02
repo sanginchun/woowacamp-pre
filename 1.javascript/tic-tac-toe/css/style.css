@@ -1,0 +1,170 @@
+:root {
+  --main-color: #14bdac;
+  --sub-color: #0da192;
+  --o-color: #f2ebd3;
+  --x-color: #545454;
+  --text-main-color: #333;
+  --text-sub-color: #999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-main-color);
+}
+
+ul {
+  list-style: none;
+}
+
+#app {
+  width: 600px;
+  max-width: 100%;
+
+  margin: 0 auto;
+  padding: 2rem 10px;
+  text-align: center;
+}
+
+/* Players */
+.players {
+  padding-top: 1.5rem;
+}
+
+.players__list {
+  display: flex;
+  justify-content: center;
+}
+
+.players__list__player {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  max-width: 40%;
+  height: 40px;
+  padding: 8px 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.players__list__player span.player {
+  font-weight: bold;
+}
+
+.players__list__player span.score {
+  color: var(--text-sub-color);
+}
+
+.players__list__player:first-child {
+  margin-right: 1rem;
+}
+
+.players__list__player.current {
+  border-bottom: 2px solid var(--main-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Message */
+.message {
+  padding-top: 1rem;
+}
+
+/* Board */
+.game-board {
+  margin: 1rem 0;
+  padding: 0.8rem 0;
+  background-color: var(--main-color);
+}
+
+.game-board__game-table {
+  width: 260px;
+  height: 260px;
+
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.game-board__game-table .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid var(--sub-color);
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.game-board__game-table .cell.fill[data-mark='O'] {
+  background-color: var(--x-color);
+}
+.game-board__game-table .cell.fill[data-mark='X'] {
+  background-color: var(--o-color);
+}
+
+.game-board__game-table .cell[data-mark='O'] {
+  color: var(--o-color);
+}
+
+.game-board__game-table .cell[data-mark='X'] {
+  color: var(--x-color);
+}
+
+.game-board__game-table .cell[data-index='0'],
+.game-board__game-table .cell[data-index='1'],
+.game-board__game-table .cell[data-index='2'] {
+  border-top: none;
+}
+
+.game-board__game-table .cell[data-index='2'],
+.game-board__game-table .cell[data-index='5'],
+.game-board__game-table .cell[data-index='8'] {
+  border-right: none;
+}
+
+.game-board__game-table .cell[data-index='6'],
+.game-board__game-table .cell[data-index='7'],
+.game-board__game-table .cell[data-index='8'] {
+  border-bottom: none;
+}
+
+.game-board__game-table .cell[data-index='0'],
+.game-board__game-table .cell[data-index='3'],
+.game-board__game-table .cell[data-index='6'] {
+  border-left: none;
+}
+
+/* Button */
+.button {
+  cursor: pointer;
+
+  border: none;
+  background-color: #fff;
+  color: var(--main-color);
+
+  font-size: 14px;
+  font-weight: bold;
+
+  margin: 0 5px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button.disabled {
+  cursor: default;
+  color: var(--text-sub-color);
+  opacity: 0.5;
+
+  text-decoration: none;
+}

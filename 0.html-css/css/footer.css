@@ -1,0 +1,124 @@
+.main-footer {
+  background-color: var(--black);
+}
+
+.main-footer__container {
+  padding: 40px 80px 20px 80px;
+}
+
+.main-footer__body {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.main-footer__body__list {
+  width: 260px;
+  padding: 0 5px;
+}
+
+.main-footer__body__list li {
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+}
+
+.main-footer__body__list.all-bold li {
+  font-size: 13.5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.main-footer__body__list.all-bold li a {
+  color: #fff;
+}
+
+.main-footer__body__list li.bold a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-footer__body__list li a {
+  color: #7e7e7e;
+}
+
+.main-footer__body__list li a:hover {
+  color: #fff;
+}
+
+.main-footer__body__social {
+  display: inline-block;
+
+  margin-left: auto;
+  height: fit-content;
+}
+
+.main-footer__body__social li {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 14px;
+}
+
+.main-footer__body__social li:last-child {
+  margin: 0;
+}
+
+.main-footer__body__social li:hover .social-icon svg {
+  fill: #fff;
+}
+
+.main-footer__body__social .social-icon svg {
+  fill: #7e7e7e;
+}
+
+.main-footer__footer {
+  padding-top: 2rem;
+  border-top: 0.1px solid #222;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__footer__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-footer__footer__info .location {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.main-footer__footer__info .location__icon {
+  fill: #fff;
+}
+
+.main-footer__footer__info .location__text {
+  margin: 0 8px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.main-footer__footer__info .copyright {
+  color: #7e7e7e;
+  font-size: 10px;
+}
+
+.main-footer__footer__policy ul {
+  display: flex;
+}
+
+.main-footer__footer__policy ul li {
+  padding: 0 12px;
+}
+
+.main-footer__footer__policy ul li a {
+  font-size: 10px;
+  color: #7e7e7e;
+}
+
+.main-footer__footer__policy ul li a:hover {
+  color: #fff;
+}

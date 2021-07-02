@@ -1,0 +1,36 @@
+@import url('./header.css');
+@import url('./banner.css');
+@import url('./main.css');
+@import url('./footer.css');
+
+:root {
+  --black: #111;
+  --medium-grey: #666;
+  --grey: #f6f6f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--black);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--medium-grey);
+}
